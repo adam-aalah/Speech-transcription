@@ -1,2 +1,2 @@
 # Speech_transcription
-Speech transcription and speech diarization
+Speech transcription and speaker diarization
