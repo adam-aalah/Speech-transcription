@@ -13,11 +13,6 @@ import gc
 import logging
 logging.basicConfig(level=logging.ERROR)  
 
-#activate transc
-## python -m venv myenv
-#.\myenv\Scripts\activate
-
-
 # Initialize the diarization pipeline
 diar_pipeline = Pipeline.from_pretrained(
     #"pyannote/speaker-diarization", 
