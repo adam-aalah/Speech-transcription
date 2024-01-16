@@ -1,3 +1,6 @@
+'''
+@author: Adam AALAH
+'''
 from pyannote.audio import Pipeline
 from pydub import AudioSegment
 import numpy as np
