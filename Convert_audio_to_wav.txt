@@ -1,0 +1,17 @@
+#### Open Anaconda prompt Shell
+
+### Convert one file to (.wav): in this case we convert (.WMA) to (.wav), simply change the initial format of your audio file : (.WMA) or (.mp3), etc
+
+ffmpeg -i C:\Users\laaalah\Desktop\audio_test\DS500361.WMA -acodec pcm_s16le -ar 16000 -ac 1 C:\Users\laaalah\Desktop\audio_test\audio_test_wav\DS500361.wav
+
+### Convert multiple audio files to (.wav):
+
+# specify the directory of the audio files:
+
+cd C:\Users\laaalah\Desktop\audio_test
+
+# Use the following command to process each audio file, in this case (.WMA) files
+
+Get-ChildItem -Filter *.wma | ForEach-Object {
+    ffmpeg -i $_.FullName -acodec pcm_s16le -ar 16000 -ac 1 "C:\Users\laaalah\Desktop\audio_test\audio_test_wav\$($_.BaseName).wav"
+}
