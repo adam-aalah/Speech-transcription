@@ -100,8 +100,3 @@ with open("C:/Users/laaalah/Desktop/Audios/Transcripts/DS500484.txt", "a", encod
 
         del tr_array, tr_segment, j
         gc.collect()
-
-
-#activate transc
-## python -m venv myenv
-#.\myenv\Scripts\activate
