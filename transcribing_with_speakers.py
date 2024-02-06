@@ -19,11 +19,11 @@ logging.basicConfig(level=logging.ERROR)
 
 # Initialize the diarization pipeline
 # diar_pipeline = Pipeline.from_pretrained(
-#     "pyannote/speaker-diarization", use_auth_token="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")
+#     "pyannote/speaker-diarization", use_auth_token="...") #hugginface token
 diar_pipeline = Pipeline.from_pretrained(
     #"pyannote/speaker-diarization", 
     "pyannote/speaker-diarization@2.1",
-    use_auth_token="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")
+    use_auth_token="...") #hugginface token
 
 k = str(diar_pipeline("C:/Users/laaalah/Desktop/Audios/DS500484.wav", num_speakers=3)).split('\n')
 
