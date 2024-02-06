@@ -61,7 +61,7 @@ for audio_file in audio_files:
 
     # Load the audio file
     audio = AudioSegment.from_wav(audio_file_path)
-    audio = audio.set_frame_rate(16000) #120000 16000
+    audio = audio.set_frame_rate(16000)
 
     # Get the total duration of the audio in milliseconds
     total_duration_ms = len(audio)
@@ -88,16 +88,3 @@ for audio_file in audio_files:
 
             del tr_array
             gc.collect()
-
-
-#C:\Users\laaalah\Desktop\transcription_only_Whisper.py
-
-#conda create -n tensorflow_env python=3.8
-#conda activate tensorflow
-
-#python3 -m pip install pyannote.audio
-#pip install speechbrain
-#pip install transformers
-#pip install pydub
-            
-#C:\Users\laaalah\Downloads\transcribing_without_speakers.py
