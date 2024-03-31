@@ -85,10 +85,10 @@ def transcribe_file(file_path, language_sign):
     print(f"Transcription completed. Check the output directory for the generated files.")
 
 def main():
-    choice = input("Do you want to transcribe an online video (O) or a local file (L)? [O/L]: ").strip().upper()
+    choice = input("Do you want to transcribe an online file (O) or a local file (L)? [O/L]: ").strip().upper()
 
     if choice == 'O':
-        youtube_url = input("Enter the online video link: ")
+        youtube_url = input("Enter the online link: ")
         language_sign = input("Enter the language sign (e.g., EN, AR, FR, JA): ")
         audio_file = download_youtube_audio(youtube_url)
         transcribe_file(audio_file, language_sign)
